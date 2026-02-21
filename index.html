@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="cs">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Pavel Němec | FIS Engineer</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="indexStyle.css">
+</head>
+
+<body>
+
+    <div class="container">
+
+        <aside class="sidebar">
+            <div class="profile">
+                <div class="avatar">PN</div>
+                <h1>Pavel Němec</h1>
+                <p class="title">FIS Engineer</p>
+            </div>
+
+            <div class="section">
+                <h2>Kontakt</h2>
+                <p>📍 Pohořelice, Česká republika</p>
+                <p>📞 +420 702 631 847</p>
+                <p>✉️ nemec.pavel1093@gmail.com</p>
+                <p>🎂 3.7.1997</p>
+            </div>
+
+            <div class="section">
+                <h2>Odkazy</h2>
+                <div class="links-grid">
+                    <a href="https://github.com/Pajja1093" target="_blank" class="link-card">
+                        <div class="link-icon">🐙</div>
+                        <span>GitHub</span>
+                    </a>
+                    <a href="https://www.linkedin.com/in/pavel-n%C4%9Bmec-a69a87276" target="_blank" class="link-card">
+                        <div class="link-icon">💼</div>
+                        <span>LinkedIn</span>
+                    </a>
+                    <a href="https://www.instagram.com/pajja.n7" target="_blank" class="link-card">
+                        <div class="link-icon">📸</div>
+                        <span>Instagram</span>
+                    </a>
+                    <a href="https://www.facebook.com/nemecpavel77" target="_blank" class="link-card">
+                        <div class="link-icon">📘</div>
+                        <span>Facebook</span>
+                    </a>
+                </div>
+            </div>
+        </aside>
+
+        <aside class="list">
+            <ul>
+                <li><a href="#" data-page="me">O mně</a></li>
+                <li><a href="#" data-page="career">Kariéra</a></li>
+                <li><a href="#" data-page="skills">Dovednosti</a></li>
+                <li><a href="#" data-page="hobbies">Zájmy</a></li>
+                <li><a href="#" data-page="summary">Shrnutí</a></li>
+            </ul>
+        </aside>
+
+        <section class="content" id="content"></section>
+
+    </div>
+
+    <script>
+        const pages = {
+
+            me:
+            `
+                <h2>O mně</h2>
+                <div class="intro-card">
+                    <p>Jsem <strong>FIS Engineer</strong> ve společnosti Inventec Brno s přesahem do interního vývoje aplikací v prostředí C#/.NET.</p>
+                    <p>
+                       Specializuji se na práci s databázemi Microsoft SQL Server, návrh databázových struktur a optimalizaci dotazů. 
+                       Mám zkušenosti s tvorbou procedur, správou dat a řešením výkonových problémů. 
+                       C# a .NET využívám jako podpůrný nástroj pro vývoj aplikací nad databázovou vrstvou. 
+                       Zaměřuji se na spolehlivost, efektivitu a čisté řešení.
+                    </p>
+                </div>
+            `,
+
+            career:
+            `
+                <h2>Kariéra</h2>
+                <div class="timeline-container">
+
+                    <div class="timeline-item">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-content">
+                            <div class="timeline-date">09/2013 – 06/2018</div>
+                            <h3>Střední škola s maturitou – Elektrotechnika</h3>
+                            <p>Centrum odborné přípravy technické, Kroměříž</p>
+                        </div>
+                    </div>
+
+                    <div class="timeline-item">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-content">
+                            <div class="timeline-date">08/2018 – 01/2020</div>
+                            <h3>Assembler – Thermo Fisher Scientific</h3>
+                            <p>Montáž a kompletace elektroniky pro elektronové mikroskopy.</p>
+                        </div>
+                    </div>
+
+                    <div class="timeline-item">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-content">
+                            <div class="timeline-date">03/2020 – 12/2023</div>
+                            <h3>FIS Technik – Inventec, Brno</h3>
+                            <p>
+                                Na pozici FIS Technika ve společnosti Inventec Brno jsem byl
+                                zodpovědný za každodenní podporu a správu výrobního
+                                informačního systému (FIS) přímo ve výrobním prostředí.
+                                Mou hlavní náplní bylo řešení incidentů, analýza chyb
+                                systému a podpora operátorů a dalších oddělení při práci
+                                se systémem.
+                                Prováděl jsem základní i pokročilejší zásahy do databáze
+                                (MSSQL), pracoval s SQL dotazy při dohledávání příčin
+                                problémů a podílel se na opravách dat či optimalizaci
+                                procesů v systému. Postupně jsem se dostal k složitějším
+                                dotazům, uloženým procedurám a pochopení logiky
+                                databázové struktury.
+                                Účastnil jsem se implementace změn a nových funkcí do
+                                systému, jejich testování a následného nasazení do
+                                provozu. Spolupracoval jsem s vývojovým týmem a
+                                zahraniční pobočkou při řešení systémových chyb a návrhů
+                                úprav.
+                                Součástí mé práce byla také tvorba a aktualizace pracovní
+                                dokumentace a postupů (SOP), školení kolegů a podpora
+                                méně zkušených techniků při řešení složitějších situací.
+                                Tato pozice mi umožnila detailně porozumět fungování
+                                výrobního systému, databázovým vazbám a procesům ve
+                                výrobě, což vytvořilo pevný základ pro můj následný posun
+                                na pozici FIS Engineera a směrem k internímu vývoji aplikací
+                                v prostředí C#/.NET.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="timeline-item">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-content">
+                            <div class="timeline-date">01/2024 – Současnost</div>
+                            <h3>FIS Engineer – Inventec, Brno</h3>
+                            <p>
+                                Poslední dva roky zastávám pozici FIS Engineera ve
+                                společnosti Inventec Brno. Jedná se o technicko-procesní
+                                roli s přesahem do interního vývoje a práce s databázemi.
+                                Pravidelně se účastním meetingů s kolegy z taiwanské
+                                pobočky, kde společně řešíme nové funkce systému,
+                                návrhy vylepšení, chyby i další změny související s naším
+                                FIS systémem. Aktivně se podílím na diskuzích i testování
+                                nových funkcionalit.
+                                Při zavádění nových projektů jsem součástí týmu
+                                odpovědného za testování, validaci a následnou
+                                implementaci systému do provozu. Současně vytvářím a
+                                aktualizuji SOP dokumentaci pro FIS techniky tak, aby i
+                                méně zkušení kolegové byli schopni samostatně řešit
+                                složitější problémy bez nutnosti mé přítomnosti nebo
+                                zásahu supervisora.
+                                Během posledního roku jsem se více posunul směrem k
+                                developmentu. Vyvíjím jednodušší interní webové aplikace
+                                (C# / .NET), které jsou napojené na naši MSSQL databázi a
+                                FIS systém. Tyto aplikace slouží pro interní potřeby firmy a
+                                běží v rámci naší firemní sítě. Díky tomu jsem si výrazně
+                                prohloubil znalosti práce s MSSQL – zejména složitějších
+                                dotazů, uložených procedur a triggerů. Databáze a práce s
+                                daty jsou dnes každodenní součástí mé pracovní náplně.
+                                Jednou z největších výzev na této pozici byl přesun firmy
+                                na přelomu let 2024/2025 do nové haly v Blučině, kde jsem
+                                se podílel na zajištění hladkého přesunu FIS systému a
+                                související infrastruktury tak, aby byl minimalizován dopad
+                                na výrobu a provoz.
+                            </p>    
+                        </div>
+                    </div>
+
+                </div>
+            `,
+
+            hobbies:
+            `
+                <h2>Zájmy a volný čas</h2>
+                <div class="hobbies-grid">
+                    <div class="hobby-card"><div class="hobby-icon">🏃</div><h3>Běh</h3><p>My best: 21,3km</p></div>
+                    <div class="hobby-card"><div class="hobby-icon">🚴</div><h3>Cyklistika</h3></div>
+                    <div class="hobby-card"><div class="hobby-icon">🥾</div><h3>Turistika</h3><p>Hory</p></div>
+                    <div class="hobby-card"><div class="hobby-icon">🌍</div><h3>Cestování</h3><p>Vysněná země: USA</p></div>
+                    <div class="hobby-card"><div class="hobby-icon">🎮</div><h3>Počítačové hry</h3><p>Srdcovka: WOW</p></div>
+                </div>
+            `,
+
+            skills:
+            `
+                <h2>Dovednosti</h2>
+                <div class="hobbies-grid">
+                    <div class="hobby-card">
+                        <div class="hobby-icon">🗄️</div>
+                        <h3>Databáze</h3>
+                        <p>MSSQL (stored procedures, triggery, optimalizace dotazů), PostgreSQL</p>
+                    </div>
+
+                    <div class="hobby-card">
+                        <div class="hobby-icon">💻</div>
+                        <h3>Backend</h3>
+                        <p>C# / .NET – interní webové aplikace napojené na výrobní systém</p>
+                    </div>
+
+                    <div class="hobby-card">
+                        <div class="hobby-icon">🌐</div>
+                        <h3>Frontend</h3>
+                        <p>HTML & CSS, tvorba jednoduchých interních webů</p>
+                    </div>
+
+                    <div class="hobby-card">
+                        <div class="hobby-icon">🔍</div>
+                        <h3>Analýza & Podpora</h3>
+                        <p>SQL debugging, implementace funkcí, optimalizace procesů</p>
+                    </div>
+
+                    <div class="hobby-card">
+                        <div class="hobby-icon">📄</div>
+                        <h3>Dokumentace</h3>
+                        <p>Tvorba SOP dokumentace, školení kolegů, workflow a postupy</p>
+                    </div>
+
+                    <div class="hobby-card">
+                        <div class="hobby-icon">🗣️</div>
+                        <h3>Jazyky</h3>
+                        <p>Angličtina B1/B2</p>
+                    </div>
+
+                    <div class="hobby-card">
+                        <div class="hobby-icon">🚗</div>
+                        <h3>Řidičský průkaz</h3>
+                        <p>Skupina B</p>
+                    </div>
+                </div>
+            `,
+
+            summary:
+            `
+                <h2>O mně</h2>
+                <div class="intro-card">
+                    <p>
+                       Do Inventecu jsem nastoupil jako úplný laik v oblasti SQL,
+                        databází a programování. Postupně jsem si osvojil základy
+                        v MSSQL a snažím se pravidelně učit nové věci. Práce mě
+                        baví a rád řeším výzvy, které přináší. Mám zkušenosti s
+                        tvorbou interních aplikací, SQL skriptů a webových aplikací v
+                        C#. Ve volném čase běhám, trávím čas se svou manželkou
+                        a psy, rád cestuji a poznávám nové věci.
+                    </p>
+                </div>
+            `
+        };
+
+        function loadPage(pageName) {
+            const contentDiv = document.getElementById('content');
+            if (pages[pageName]) {
+                contentDiv.innerHTML = pages[pageName];
+            }
+        }
+
+        document.querySelectorAll('.list a').forEach(link => {
+            link.addEventListener('click', function (e) {
+                e.preventDefault();
+                const pageName = this.getAttribute('data-page');
+                loadPage(pageName);
+
+                document.querySelectorAll('.list li').forEach(li => li.classList.remove('active'));
+                document.querySelectorAll('.list a').forEach(l => l.classList.remove('active'));
+                this.parentElement.classList.add('active');
+                this.classList.add('active');
+            });
+        });
+
+        window.addEventListener('load', function () {
+            loadPage('me');
+            document.querySelector('[data-page="me"]').parentElement.classList.add('active');
+            document.querySelector('[data-page="me"]').classList.add('active');
+        });
+    </script>
+
+</body>
+
+</html>
