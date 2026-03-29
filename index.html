@@ -9,9 +9,7 @@
 </head>
 
 <body>
-
     <div class="container">
-
         <aside class="sidebar">
             <div class="profile">
                 <div class="avatar">PN</div>
@@ -57,6 +55,7 @@
                 <li><a href="#" data-page="skills">Dovednosti</a></li>
                 <li><a href="#" data-page="hobbies">Zájmy</a></li>
                 <li><a href="#" data-page="summary">Shrnutí</a></li>
+                <li><a href="#" data-page="certificates">Certifikace</a></li>
             </ul>
         </aside>
 
@@ -71,11 +70,19 @@
             `
                 <h2>O mně</h2>
                 <div class="intro-card">
-                    <p>Jsem <strong>FIS Engineer</strong> ve společnosti Inventec Brno s přesahem do interního vývoje aplikací v prostředí C#/.NET.</p>
+                    <p>Jsem <strong>C# programátor</strong> ve společnosti SMC Vyškov.</p>
                     <p>
-                       Specializuji se na práci s databázemi Microsoft SQL Server, návrh databázových struktur a optimalizaci dotazů. 
-                       Mám zkušenosti s tvorbou procedur, správou dat a řešením výkonových problémů. 
-                       C# a .NET využívám jako podpůrný nástroj pro vývoj aplikací nad databázovou vrstvou. 
+                          V současné době pracuji jako C# programátor ve společnosti SMC Vyškov, kde se zaměřuji na vývoj a údržbu interních aplikací.
+                          Mám zkušenosti s tvorbou webových i desktopových aplikací v prostředí .NET, které jsou napojeny na databáze MSSQL.
+                          Pracuji na optimalizaci stávajících řešení, implementaci nových funkcí a zajištění bezproblémového chodu aplikací pro interní potřeby firmy.
+                    </p>
+                </div>
+                <div class="intro-card">
+                    <p>Byl jsem <strong>FIS Engineer</strong> ve společnosti Inventec Brno s přesahem do interního vývoje aplikací v prostředí C#/.NET.</p>
+                    <p>
+                       Specializuji se na práci s databázemi Microsoft SQL Server, návrh databázových struktur a optimalizaci dotazů.
+                       Mám zkušenosti s tvorbou procedur, správou dat a řešením výkonových problémů.
+                       C# a .NET využívám jako podpůrný nástroj pro vývoj aplikací nad databázovou vrstvou.
                        Zaměřuji se na spolehlivost, efektivitu a čisté řešení.
                     </p>
                 </div>
@@ -142,10 +149,10 @@
                     <div class="timeline-item">
                         <div class="timeline-dot"></div>
                         <div class="timeline-content">
-                            <div class="timeline-date">01/2024 – Současnost</div>
+                            <div class="timeline-date">01/2024 – 03/2026</div>
                             <h3>FIS Engineer – Inventec, Brno</h3>
                             <p>
-                                Poslední dva roky zastávám pozici FIS Engineera ve
+                                Zastával jsem pozici FIS Engineera ve
                                 společnosti Inventec Brno. Jedná se o technicko-procesní
                                 roli s přesahem do interního vývoje a práce s databázemi.
                                 Pravidelně se účastním meetingů s kolegy z taiwanské
@@ -173,10 +180,20 @@
                                 se podílel na zajištění hladkého přesunu FIS systému a
                                 související infrastruktury tak, aby byl minimalizován dopad
                                 na výrobu a provoz.
-                            </p>    
+                            </p>
                         </div>
                     </div>
 
+                    <div class="timeline-item">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-content">
+                            <div class="timeline-date">04/2026 – Současnost</div>
+                            <h3>SMC Vyškov</h3>
+                            <p>
+                                Nový začátek
+                            </p>
+                        </div>
+                    </div>
                 </div>
             `,
 
@@ -254,6 +271,32 @@
                         a psy, rád cestuji a poznávám nové věci.
                     </p>
                 </div>
+                <div class="intro-card">
+                    <p>
+                        Jsem otevřený novým příležitostem a výzvám, které mi umožní
+                        dále růst a rozvíjet své dovednosti v oblasti databází,
+                        programování a IT obecně. Rád bych se posunul směrem k
+                        vývoji aplikací, kde mohu využít své zkušenosti s MSSQL a
+                        C# a zároveň se učit nové technologie.
+                    </p>
+                </div>
+            `,
+            certificates:
+            `
+                <h2>Certifikace</h2>
+                <div class="certificates-grid">
+                    <div class="certificate-card">
+                        <div class="certificate-icon"></div>
+                        <h3>Blazor Deepdive in .NET10 Beginner to Advanced</h3>
+                        <img src="/Blazor cer.png" alt="Blazor Fundamentals">
+                    </div>
+                    <br/>
+                    <div class="certificate-card">
+                        <div class="certificate-icon"></div>
+                        <h3>SQL Development with MSSQL server Beginner to Advanced</h3>
+                        <img src="/SQL cer.png" alt="MSSQL Fundamentals">
+                    </div>
+                </div>
             `
         };
 
@@ -283,7 +326,5 @@
             document.querySelector('[data-page="me"]').classList.add('active');
         });
     </script>
-
 </body>
-
 </html>
